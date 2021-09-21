@@ -7,7 +7,7 @@ describe('csv import', () => {
     const testData = [
       'maria,maria@gmail.com'
     ];
-    const [name, email] = testData[0].split(',');
+    const [expectedName, expectedEmail] = testData[0].split(',');
 
     const fileStream = Readable.from(testData);
 
@@ -17,6 +17,6 @@ describe('csv import', () => {
     const [result] = await service.run(fileStream);
 
     // assert
-    expect(result).toEqual({ name: name, email: email });
+    expect(result).toEqual({ name: expectedName, email: expectedEmail });
   });
 });
