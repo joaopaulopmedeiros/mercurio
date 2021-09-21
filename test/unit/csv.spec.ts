@@ -9,7 +9,7 @@ describe('csv import', () => {
   });
 
   afterAll(async () => {
-    await db.closeDatabase();
+    await db.close();
   });
   test('it should import a csv file and update database with contacts', async () => {
     const testData = [
