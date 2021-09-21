@@ -13,8 +13,7 @@ describe('csv import', () => {
     }
 
     connection = await MongoClient.connect(url, {
-      useNewUrlParser: true,
-      useUnifiedTopology: true
+      useNewUrlParser: true
     });
   });
 

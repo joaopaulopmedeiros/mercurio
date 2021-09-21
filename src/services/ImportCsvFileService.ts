@@ -19,8 +19,10 @@ export default class ImportCsvFileService {
     parser.on('data', async (data) => {
       results.push(data);
       const { email } = data;
+
       await Contact.findOneAndUpdate(
-        { email },
+        email,
+        data,
         { upsert: true }
       );
     });
