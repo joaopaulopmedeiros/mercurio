@@ -1,11 +1,7 @@
 import { Readable } from 'stream';
 import csv from 'csv-parser';
 import Contact from '../../src/domain/entities/Contact';
-
-type CsvResult = {
-  name: string | undefined,
-  email: string | undefined
-};
+import { CsvResult } from '../../src/@types/Csv';
 
 const initialState: Array<CsvResult> = [];
 
