@@ -9,7 +9,8 @@
     "lint": "eslint src --ext ts,tsx",
     "dev": "tsnd --transpile-only --ignore-watch node_modules src/index.ts",
     "test": "jest --detectOpenHandles",
-    "test:watch": "jest --watchAll"
+    "test:watch": "jest --watchAll",
+    "test:coverage": "jest --collect-coverage"
   },
   "devDependencies": {
     "@babel/core": "^7.15.5",
