@@ -2,7 +2,7 @@ import { Readable } from 'stream';
 import csv from 'csv-parser';
 
 type CsvResult = {
-  nome: string|undefined,
+  name: string|undefined,
   email: string|undefined
 };
 
@@ -12,7 +12,7 @@ export default class ImportCsvFileService {
   async run(fileStream: Readable) : Promise<Array<CsvResult>> {
     const results: Array<CsvResult> = initialState;
 
-    const parser = fileStream.pipe(csv(['nome', 'email']));
+    const parser = fileStream.pipe(csv(['name', 'email']));
 
     parser.on('data', (data) => results.push(data));
 
