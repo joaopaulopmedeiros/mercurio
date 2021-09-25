@@ -1,4 +1,7 @@
-const amqplib = require('amqplib');
+import dotenv from 'dotenv';
+import amqplib from 'amqplib';
+
+dotenv.config();
 
 const amqpUrl = process.env.AMQP_CONNECTION || 'amqp://localhost:5672';
 
