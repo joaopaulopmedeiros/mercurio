@@ -1,11 +1,11 @@
 import { Readable } from 'stream';
 import csv from 'csv-parser';
-import Contact from '../../src/domain/entities/Contact';
-import { CsvResult } from '../../src/@types/Csv';
+import Contact from './Contact';
+import { CsvResult } from '../../@types/Csv';
 
 const initialState: Array<CsvResult> = [];
 
-export default class ImportCsvFileService {
+export default class ImportContactsByCsvFileService {
   async run(fileStream: Readable): Promise<Array<CsvResult>> {
     const results: Array<CsvResult> = initialState;
 
