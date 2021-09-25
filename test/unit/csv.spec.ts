@@ -1,6 +1,6 @@
 import { Readable } from 'stream';
 import * as db from '../utils/db';
-import ImportCsvFileService from '../../src/services/ImportCsvFileService';
+import ImportContactsByCsvFileService from '../../src/domain/contactsAggregate/ImportContactsByCsvFileService';
 
 describe('csv import', () => {
 
@@ -20,7 +20,7 @@ describe('csv import', () => {
 
     const fileStream = Readable.from(testData);
 
-    const service = new ImportCsvFileService();
+    const service = new ImportContactsByCsvFileService();
 
     const [result] = await service.run(fileStream);
 
