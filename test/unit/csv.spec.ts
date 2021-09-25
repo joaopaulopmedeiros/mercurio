@@ -1,6 +1,6 @@
 import { Readable } from 'stream';
 import * as db from '../utils/db';
-import ImportContactsByCsvFileService from '../../src/domain/contactsAggregate/ImportContactsByCsvFileService';
+import ImportContactsByCsvFileService from '../../src/domain/contacts-aggregate/ImportContactsByCsvFileService';
 
 describe('csv import', () => {
 
