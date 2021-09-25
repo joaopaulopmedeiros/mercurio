@@ -2,6 +2,7 @@ import { Readable } from 'stream';
 import csv from 'csv-parser';
 import Contact from './Contact';
 import { CsvResult } from '../../@types/Csv';
+import logger from '../../infra/log';
 
 const initialState: Array<CsvResult> = [];
 
@@ -11,7 +12,8 @@ export default class ImportContactsByCsvFileService {
 
     const parser = fileStream.pipe(csv(['name', 'email']));
 
-    // eslint-disable-next-line space-before-function-paren
+    logger.info('begin of contacts importation');
+
     parser.on('data', async (data) => {
       results.push(data);
       const { email } = data;
@@ -24,6 +26,7 @@ export default class ImportContactsByCsvFileService {
     });
 
     return new Promise<Array<CsvResult>>(resolve => parser.on('end', () => {
+      logger.info('end of contacts importation');
       resolve(results);
     }));
   }
