@@ -8,4 +8,6 @@ routes.get('/', (request: Request, response: Response) => {
 
 routes.get('/contatos', ContactController.index);
 
+routes.post('/contatos/importacao/csv', ContactController.importByCsv);
+
 export default routes;

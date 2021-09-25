@@ -57,6 +57,25 @@
                   }
               }
           }
+      },
+      "/contatos/importacao/csv": {
+        "post": {
+          "tags": [
+              "Contacts"
+          ],
+          "summary": "Import contacts by csv file",
+          "produces": [
+              "application/json"
+          ],
+          "responses": {
+              "201": {
+                  "description": "Successful operation",
+                  "schema": {
+                      "$ref": "#/definitions/Contact"
+                  }
+              }
+          }
+      }
       }
   },
   "definitions": {
