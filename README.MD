@@ -24,6 +24,10 @@ A Node.js notification microservice for notification.
   - A couple of DDD principles;
   - A couple of Clean Code principles;
 
+## Do you want to join this project?
+
+[Check it out](./.github/contribution.md)
+
 ## 💻 Authors
 
 Developed with 💖 by joaopaulopmedeiros
