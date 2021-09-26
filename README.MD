@@ -24,7 +24,7 @@ A Node.js notification microservice.
   - DDD principles;
   - Clean Code principles;
   - Git conventional commits;
-  - Style guides with Lint and EditorConfig;
+  - Style guides;
 - Containers:
   - How to dockerize a Node.js app;
 - Database
