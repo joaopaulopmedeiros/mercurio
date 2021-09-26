@@ -3,22 +3,27 @@
 </h1>
 
 ## 📜 Description
- A Node.js notification microservice for notification.
+
+A Node.js notification microservice for notification.
 
 ## 🧠 Features
+
 - [x] Import contacts from csv file into a no-sql database;
 - [x] List all contacts;
 - [x] Consume queue from message broker;
 - [ ] Send e-mails for list of contacts;
 
 ## ⁉️ What can you learn from this repo
+
 - Unit testing:
   - Mock filesystem;
   - Mock no-sql database;
-  - To generate test coverage report;   
-- Architecture:
-  - To apply Service-repository pattern;    
-
+  - Test coverage report;
+- Patterns:
+  - Service-repository pattern;
+  - A couple of DDD principles;
+  - A couple of Clean Code principles;
 
 ## 💻 Authors
+
 Developed with 💖 by joaopaulopmedeiros
