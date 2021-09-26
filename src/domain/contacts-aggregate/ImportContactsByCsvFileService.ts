@@ -15,7 +15,7 @@ export default class ImportContactsByCsvFileService {
     logger.info('begin of contacts importation');
 
     parser.on('data', async (data) => {
-      console.log(data);
+      results.push(data);
       await new ContactService().update(data);
     });
 
