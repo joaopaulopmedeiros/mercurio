@@ -4,7 +4,7 @@
 
 ## 📜 Description
 
-A Node.js notification microservice for notification.
+A Node.js notification microservice.
 
 ## 🧠 Features
 
