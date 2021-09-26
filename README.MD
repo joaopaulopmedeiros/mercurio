@@ -21,8 +21,9 @@ A Node.js notification microservice for notification.
   - Test coverage report;
 - Patterns:
   - Service-repository pattern;
-  - A couple of DDD principles;
-  - A couple of Clean Code principles;
+  - DDD principles;
+  - Clean Code principles;
+  - Git conventional commits;
 - Containers:
   - How to dockerize a Node.js app;
 - Database
