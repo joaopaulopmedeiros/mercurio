@@ -11,7 +11,7 @@ A Node.js notification microservice for notification.
 - [x] Import contacts from csv file into a no-sql database;
 - [x] List all contacts;
 - [x] Consume queue from message broker;
-- [ ] Send e-mails for list of contacts;
+- [ ] Send e-mails to list of contacts;
 
 ## ⁉️ What can you learn from this repo
 
@@ -23,6 +23,10 @@ A Node.js notification microservice for notification.
   - Service-repository pattern;
   - A couple of DDD principles;
   - A couple of Clean Code principles;
+- Containers:
+  - How to dockerize a Node.js app;
+- Database
+  - How to query using no-sql databases such as mongodb;
 
 ## Do you want to join this project?
 
