@@ -4,7 +4,7 @@
 
 ## 📜 Description
 
-A Node.js notification microservice.
+A Node.js contact management microservice.
 
 ## 🧠 Features
 
