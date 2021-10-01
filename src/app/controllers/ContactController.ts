@@ -10,6 +10,7 @@ class ContactController {
     const results = await new ContactService().findAll();
     return response.json(results);
   }
+
   static async importByCsv(request: Request, response: Response) {
     const fileName: string | undefined = request.file?.filename;
     const filePath = path.resolve(uploadConfig.tmpDir, String(fileName));

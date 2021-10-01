@@ -15,6 +15,6 @@
     "semi": [2, "always"],
     "comma-dangle": "off",
     "quotes": [2, "single", { "avoidEscape": true }],
-    "space-before-function-paren": ["never"]
+    "space-before-function-paren": 0
   }
 }

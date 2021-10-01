@@ -4,6 +4,6 @@ const logger = pino({
   prettyPrint: {
     ignore: 'pid,hostname'
   }
-})
+});
 
 export default logger;
